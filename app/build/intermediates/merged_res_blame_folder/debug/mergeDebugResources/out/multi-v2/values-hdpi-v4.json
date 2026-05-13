@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.musicianfinder.app-mergeDebugResources-45:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/cyber/.gradle/caches/9.0-milestone-1/transforms/6fbdd8e6786198472a8a3958624b4ca4/transformed/appcompat-1.7.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

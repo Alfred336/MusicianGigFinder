@@ -1,0 +1,18 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.13.2'
+        classpath 'com.google.gms:google-services:4.4.2'
+    }
+}
+
+// The 'allprojects' and 'repositories' blocks were removed
+// because they are now managed in settings.gradle
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

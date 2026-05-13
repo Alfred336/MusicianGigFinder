@@ -1,0 +1,624 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.musicianfinder"
+4    android:versionCode="2"
+5    android:versionName="2.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:6:5-79
+12-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:6:22-76
+13    <uses-permission
+13-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:7:5-8:38
+14        android:name="android.permission.READ_EXTERNAL_STORAGE"
+14-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:7:22-77
+15        android:maxSdkVersion="32" />
+15-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:8:9-35
+16    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+16-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:9:5-76
+16-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:9:22-73
+17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+17-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:10:5-77
+17-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:10:22-74
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:24:5-68
+18-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:26:22-79
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+20-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:26:22-107
+21    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+21-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:25:5-79
+21-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:25:22-76
+22    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+22-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:26:5-88
+22-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:26:22-85
+23    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+23-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:27:5-82
+23-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:27:22-79
+24    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+24-->[com.google.android.recaptcha:recaptcha:18.4.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/de9c7e8aa9d9bf682f0400e769ae32fd/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:5-98
+24-->[com.google.android.recaptcha:recaptcha:18.4.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/de9c7e8aa9d9bf682f0400e769ae32fd/transformed/jetified-recaptcha-18.4.0/AndroidManifest.xml:9:22-95
+25
+26    <permission
+26-->[androidx.core:core:1.13.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7faf3607279f6e84100a8e3ad4184290/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+27        android:name="com.musicianfinder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.13.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7faf3607279f6e84100a8e3ad4184290/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.13.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7faf3607279f6e84100a8e3ad4184290/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+29
+30    <uses-permission android:name="com.musicianfinder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.13.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7faf3607279f6e84100a8e3ad4184290/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.13.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7faf3607279f6e84100a8e3ad4184290/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+31
+32    <application
+32-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:12:5-51:19
+33        android:allowBackup="true"
+33-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:13:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.13.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7faf3607279f6e84100a8e3ad4184290/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:label="@string/app_name"
+37-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:14:9-41
+38        android:networkSecurityConfig="@xml/network_security_config"
+38-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:18:9-69
+39        android:supportsRtl="true"
+39-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:15:9-35
+40        android:theme="@style/Theme.MusicianGigFinder"
+40-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:16:9-55
+41        android:usesCleartextTraffic="false" >
+41-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:17:9-45
+42        <activity
+42-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:20:9-25:20
+43            android:name="com.musicianfinder.activities.MainActivity"
+43-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:20:19-58
+44            android:exported="true" >
+44-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:20:59-82
+45            <intent-filter>
+45-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:21:13-24:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:22:17-68
+46-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:22:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:23:17-76
+48-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:23:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity
+51-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:27:9-94
+52            android:name="com.musicianfinder.activities.MusicianLoginActivity"
+52-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:27:19-67
+53            android:exported="false" />
+53-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:27:68-92
+54        <activity
+54-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:28:9-97
+55            android:name="com.musicianfinder.activities.MusicianRegisterActivity"
+55-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:28:19-70
+56            android:exported="false" />
+56-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:28:71-95
+57        <activity
+57-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:29:9-98
+58            android:name="com.musicianfinder.activities.MusicianDashboardActivity"
+58-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:29:19-71
+59            android:exported="false" />
+59-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:29:72-96
+60        <activity
+60-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:30:9-96
+61            android:name="com.musicianfinder.activities.MusicianProfileActivity"
+61-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:30:19-69
+62            android:exported="false" />
+62-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:30:70-94
+63        <activity
+63-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:31:9-100
+64            android:name="com.musicianfinder.activities.MusicianProfileEditActivity"
+64-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:31:19-73
+65            android:exported="false" />
+65-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:31:74-98
+66        <activity
+66-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:32:9-94
+67            android:name="com.musicianfinder.activities.RequesterHomeActivity"
+67-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:32:19-67
+68            android:exported="false" />
+68-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:32:68-92
+69        <activity
+69-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:33:9-91
+70            android:name="com.musicianfinder.activities.AdminLoginActivity"
+70-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:33:19-64
+71            android:exported="false" />
+71-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:33:65-89
+72        <activity
+72-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:34:9-95
+73            android:name="com.musicianfinder.activities.AdminDashboardActivity"
+73-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:34:19-68
+74            android:exported="false" />
+74-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:34:69-93
+75        <activity
+75-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:35:9-36:70
+76            android:name="com.musicianfinder.activities.PaymentActivity"
+76-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:35:19-61
+77            android:exported="false"
+77-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:35:62-86
+78            android:windowSoftInputMode="stateVisible|adjustResize" />
+78-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:36:13-68
+79
+80        <!-- FCM -->
+81        <service
+81-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:39:9-43:19
+82            android:name="com.musicianfinder.services.MyFirebaseMessagingService"
+82-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:39:18-69
+83            android:exported="false" >
+83-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:39:70-94
+84            <intent-filter>
+84-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:40:13-42:29
+85                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+85-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:41:17-77
+85-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:41:25-75
+86            </intent-filter>
+87        </service>
+88
+89        <meta-data
+89-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:45:9-46:70
+90            android:name="com.google.firebase.messaging.default_notification_channel_id"
+90-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:45:20-96
+91            android:value="@string/default_notification_channel_id" />
+91-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:46:13-68
+92        <meta-data
+92-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:47:9-48:59
+93            android:name="com.google.firebase.messaging.default_notification_icon"
+93-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:47:20-90
+94            android:resource="@drawable/ic_notification" />
+94-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:48:13-57
+95        <meta-data
+95-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:49:9-50:53
+96            android:name="com.google.firebase.messaging.default_notification_color"
+96-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:49:20-91
+97            android:resource="@color/colorPrimary" />
+97-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:50:13-51
+98
+99        <activity
+99-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:29:9-46:20
+100            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+100-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:30:13-80
+101            android:excludeFromRecents="true"
+101-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:31:13-46
+102            android:exported="true"
+102-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:32:13-36
+103            android:launchMode="singleTask"
+103-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:33:13-44
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+104-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:34:13-72
+105            <intent-filter>
+105-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:35:13-45:29
+106                <action android:name="android.intent.action.VIEW" />
+106-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:36:17-69
+106-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:36:25-66
+107
+108                <category android:name="android.intent.category.DEFAULT" />
+108-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:38:17-76
+108-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:38:27-73
+109                <category android:name="android.intent.category.BROWSABLE" />
+109-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:39:17-78
+109-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:39:27-75
+110
+111                <data
+111-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:41:17-44:51
+112                    android:host="firebase.auth"
+112-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:42:21-49
+113                    android:path="/"
+113-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:43:21-37
+114                    android:scheme="genericidp" />
+114-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:44:21-48
+115            </intent-filter>
+116        </activity>
+117        <activity
+117-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:47:9-64:20
+118            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+118-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:48:13-79
+119            android:excludeFromRecents="true"
+119-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:49:13-46
+120            android:exported="true"
+120-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:50:13-36
+121            android:launchMode="singleTask"
+121-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:51:13-44
+122            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+122-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:52:13-72
+123            <intent-filter>
+123-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:53:13-63:29
+124                <action android:name="android.intent.action.VIEW" />
+124-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:36:17-69
+124-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:36:25-66
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:38:17-76
+126-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:38:27-73
+127                <category android:name="android.intent.category.BROWSABLE" />
+127-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:39:17-78
+127-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:39:27-75
+128
+129                <data
+129-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:41:17-44:51
+130                    android:host="firebase.auth"
+130-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:42:21-49
+131                    android:path="/"
+131-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:43:21-37
+132                    android:scheme="recaptcha" />
+132-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:44:21-48
+133            </intent-filter>
+134        </activity>
+135
+136        <service
+136-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:66:9-72:19
+137            android:name="com.google.firebase.components.ComponentDiscoveryService"
+137-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:67:13-84
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+139            android:exported="false" >
+139-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:68:13-37
+140            <meta-data
+140-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:69:13-71:85
+141                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+141-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:70:17-109
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-auth:23.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/ae7acab2abfd363aa41749685886fcb4/transformed/jetified-firebase-auth-23.0.0/AndroidManifest.xml:71:17-82
+143            <meta-data
+143-->[com.google.firebase:firebase-firestore:25.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7c9dea7f3df5d2295de64e8118b37ad5/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:17:13-19:85
+144                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+144-->[com.google.firebase:firebase-firestore:25.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7c9dea7f3df5d2295de64e8118b37ad5/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:18:17-122
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[com.google.firebase:firebase-firestore:25.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7c9dea7f3df5d2295de64e8118b37ad5/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:19:17-82
+146            <meta-data
+146-->[com.google.firebase:firebase-firestore:25.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7c9dea7f3df5d2295de64e8118b37ad5/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:20:13-22:85
+147                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+147-->[com.google.firebase:firebase-firestore:25.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7c9dea7f3df5d2295de64e8118b37ad5/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:21:17-111
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[com.google.firebase:firebase-firestore:25.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/7c9dea7f3df5d2295de64e8118b37ad5/transformed/jetified-firebase-firestore-25.0.0/AndroidManifest.xml:22:17-82
+149            <meta-data
+149-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:57:13-59:85
+150                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+150-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:58:17-122
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:59:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:60:13-62:85
+153                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+153-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:61:17-119
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:62:17-82
+155            <meta-data
+155-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:37:13-39:85
+156                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+156-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:38:17-139
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:39:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-storage:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/9290c70d9b29293a081c4a9960dbe5d7/transformed/jetified-firebase-storage-21.0.0/AndroidManifest.xml:30:13-32:85
+159                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+159-->[com.google.firebase:firebase-storage:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/9290c70d9b29293a081c4a9960dbe5d7/transformed/jetified-firebase-storage-21.0.0/AndroidManifest.xml:31:17-118
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-storage:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/9290c70d9b29293a081c4a9960dbe5d7/transformed/jetified-firebase-storage-21.0.0/AndroidManifest.xml:32:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-storage:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/9290c70d9b29293a081c4a9960dbe5d7/transformed/jetified-firebase-storage-21.0.0/AndroidManifest.xml:33:13-35:85
+162                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+162-->[com.google.firebase:firebase-storage:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/9290c70d9b29293a081c4a9960dbe5d7/transformed/jetified-firebase-storage-21.0.0/AndroidManifest.xml:34:17-107
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-storage:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/9290c70d9b29293a081c4a9960dbe5d7/transformed/jetified-firebase-storage-21.0.0/AndroidManifest.xml:35:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-installations:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/aca74aea2391eef22db7fa56a98c4474/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+165                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+165-->[com.google.firebase:firebase-installations:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/aca74aea2391eef22db7fa56a98c4474/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-installations:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/aca74aea2391eef22db7fa56a98c4474/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-installations:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/aca74aea2391eef22db7fa56a98c4474/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+168                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+168-->[com.google.firebase:firebase-installations:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/aca74aea2391eef22db7fa56a98c4474/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-installations:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/aca74aea2391eef22db7fa56a98c4474/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-appcheck:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/f25bf635fd440bd0c6fa971eb23c9579/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:25:13-27:85
+171                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+171-->[com.google.firebase:firebase-appcheck:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/f25bf635fd440bd0c6fa971eb23c9579/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:26:17-120
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-appcheck:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/f25bf635fd440bd0c6fa971eb23c9579/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:27:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-appcheck:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/f25bf635fd440bd0c6fa971eb23c9579/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:28:13-30:85
+174                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+174-->[com.google.firebase:firebase-appcheck:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/f25bf635fd440bd0c6fa971eb23c9579/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:29:17-117
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-appcheck:18.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/f25bf635fd440bd0c6fa971eb23c9579/transformed/jetified-firebase-appcheck-18.0.0/AndroidManifest.xml:30:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1c3dd87c964c6398eadf217c72b9a284/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+177                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+177-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1c3dd87c964c6398eadf217c72b9a284/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-common-ktx:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1c3dd87c964c6398eadf217c72b9a284/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+180                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+180-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-datatransport:18.2.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/4867e775547e2245836fc1ca36c9c612/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+183                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+183-->[com.google.firebase:firebase-datatransport:18.2.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/4867e775547e2245836fc1ca36c9c612/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-datatransport:18.2.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/4867e775547e2245836fc1ca36c9c612/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+185        </service>
+186
+187        <receiver
+187-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:29:9-40:20
+188            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+188-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:30:13-78
+189            android:exported="true"
+189-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:31:13-36
+190            android:permission="com.google.android.c2dm.permission.SEND" >
+190-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:32:13-73
+191            <intent-filter>
+191-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:33:13-35:29
+192                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+192-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:34:17-81
+192-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:34:25-78
+193            </intent-filter>
+194
+195            <meta-data
+195-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:37:13-39:40
+196                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+196-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:38:17-92
+197                android:value="true" />
+197-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:39:17-37
+198        </receiver>
+199        <!--
+200             FirebaseMessagingService performs security checks at runtime,
+201             but set to not exported to explicitly avoid allowing another app to call it.
+202        -->
+203        <service
+203-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:46:9-53:19
+204            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+204-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:47:13-82
+205            android:directBootAware="true"
+205-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:48:13-43
+206            android:exported="false" >
+206-->[com.google.firebase:firebase-messaging:24.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/83a0a8175656244a3bcf1c2814181daa/transformed/jetified-firebase-messaging-24.0.0/AndroidManifest.xml:49:13-37
+207            <intent-filter android:priority="-500" >
+207-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:40:13-42:29
+208                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+208-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:41:17-77
+208-->/home/cyber/Downloads/MusicianGigFinderV2(1)/MusicianGigFinder/app/src/main/AndroidManifest.xml:41:25-75
+209            </intent-filter>
+210        </service>
+211
+212        <receiver
+212-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:29:9-33:20
+213            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+213-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:30:13-85
+214            android:enabled="true"
+214-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:31:13-35
+215            android:exported="false" >
+215-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:32:13-37
+216        </receiver>
+217
+218        <service
+218-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:35:9-38:40
+219            android:name="com.google.android.gms.measurement.AppMeasurementService"
+219-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:36:13-84
+220            android:enabled="true"
+220-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:37:13-35
+221            android:exported="false" />
+221-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:38:13-37
+222        <service
+222-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:39:9-43:72
+223            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+223-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:40:13-87
+224            android:enabled="true"
+224-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:41:13-35
+225            android:exported="false"
+225-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:42:13-37
+226            android:permission="android.permission.BIND_JOB_SERVICE" />
+226-->[com.google.android.gms:play-services-measurement:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/87d2ceee86fe58186538be9c749acde4/transformed/jetified-play-services-measurement-22.0.1/AndroidManifest.xml:43:13-69
+227
+228        <property
+228-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:30:9-32:61
+229            android:name="android.adservices.AD_SERVICES_CONFIG"
+229-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:31:13-65
+230            android:resource="@xml/ga_ad_services_config" />
+230-->[com.google.android.gms:play-services-measurement-api:22.0.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c6846e6800e901220ac579ec405a7437/transformed/jetified-play-services-measurement-api-22.0.1/AndroidManifest.xml:32:13-58
+231
+232        <service
+232-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:24:9-32:19
+233            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+233-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:25:13-94
+234            android:enabled="true"
+234-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:26:13-35
+235            android:exported="false" >
+235-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:27:13-37
+236            <meta-data
+236-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:29:13-31:104
+237                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+237-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:30:17-76
+238                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+238-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:31:17-101
+239        </service>
+240
+241        <activity
+241-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:34:9-41:20
+242            android:name="androidx.credentials.playservices.HiddenActivity"
+242-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:35:13-76
+243            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+243-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:36:13-87
+244            android:enabled="true"
+244-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:37:13-35
+245            android:exported="false"
+245-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:38:13-37
+246            android:fitsSystemWindows="true"
+246-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:39:13-45
+247            android:theme="@style/Theme.Hidden" >
+247-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/1eb39b80f982e0d76b8f8d317494f8e4/transformed/jetified-credentials-play-services-auth-1.2.0-rc01/AndroidManifest.xml:40:13-48
+248        </activity>
+249        <activity
+249-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
+250            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+250-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:24:13-93
+251            android:excludeFromRecents="true"
+251-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:25:13-46
+252            android:exported="false"
+252-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:26:13-37
+253            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+253-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:27:13-72
+254        <!--
+255            Service handling Google Sign-In user revocation. For apps that do not integrate with
+256            Google Sign-In, this service will never be started.
+257        -->
+258        <service
+258-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:33:9-37:51
+259            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+259-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:34:13-89
+260            android:exported="true"
+260-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:35:13-36
+261            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+261-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:36:13-107
+262            android:visibleToInstantApps="true" />
+262-->[com.google.android.gms:play-services-auth:20.7.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/c872223aea836cdeeb1072fa8a766fd7/transformed/jetified-play-services-auth-20.7.0/AndroidManifest.xml:37:13-48
+263
+264        <provider
+264-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+265            android:name="com.google.firebase.provider.FirebaseInitProvider"
+265-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+266            android:authorities="com.musicianfinder.firebaseinitprovider"
+266-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+267            android:directBootAware="true"
+267-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+268            android:exported="false"
+268-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+269            android:initOrder="100" />
+269-->[com.google.firebase:firebase-common:21.0.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/a497db450f7c0f928f4bdd3f0e6b2567/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+270        <provider
+270-->[androidx.emoji2:emoji2:1.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/88ce22343419d4c18b2a0844c9fa74a2/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+271            android:name="androidx.startup.InitializationProvider"
+271-->[androidx.emoji2:emoji2:1.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/88ce22343419d4c18b2a0844c9fa74a2/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+272            android:authorities="com.musicianfinder.androidx-startup"
+272-->[androidx.emoji2:emoji2:1.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/88ce22343419d4c18b2a0844c9fa74a2/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+273            android:exported="false" >
+273-->[androidx.emoji2:emoji2:1.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/88ce22343419d4c18b2a0844c9fa74a2/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+274            <meta-data
+274-->[androidx.emoji2:emoji2:1.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/88ce22343419d4c18b2a0844c9fa74a2/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+275                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+275-->[androidx.emoji2:emoji2:1.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/88ce22343419d4c18b2a0844c9fa74a2/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+276                android:value="androidx.startup" />
+276-->[androidx.emoji2:emoji2:1.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/88ce22343419d4c18b2a0844c9fa74a2/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+277            <meta-data
+277-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/138fd88ae871f1f5c05db372bf48ac75/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+278                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+278-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/138fd88ae871f1f5c05db372bf48ac75/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+279                android:value="androidx.startup" />
+279-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/138fd88ae871f1f5c05db372bf48ac75/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+280            <meta-data
+280-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+281                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+281-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+282                android:value="androidx.startup" />
+282-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+283        </provider>
+284
+285        <activity
+285-->[com.google.android.gms:play-services-base:18.1.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/84d46c615ce23a0df87438e18df44b06/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+286            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+286-->[com.google.android.gms:play-services-base:18.1.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/84d46c615ce23a0df87438e18df44b06/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+287            android:exported="false"
+287-->[com.google.android.gms:play-services-base:18.1.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/84d46c615ce23a0df87438e18df44b06/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+288            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+288-->[com.google.android.gms:play-services-base:18.1.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/84d46c615ce23a0df87438e18df44b06/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+289
+290        <uses-library
+290-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/0a05584174d483373390ed0be879c62e/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:23:9-25:40
+291            android:name="android.ext.adservices"
+291-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/0a05584174d483373390ed0be879c62e/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:24:13-50
+292            android:required="false" />
+292-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/0a05584174d483373390ed0be879c62e/transformed/jetified-ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
+293
+294        <meta-data
+294-->[com.google.android.gms:play-services-basement:18.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/6999bfb00e592b4a70cd4ebe580811df/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+295            android:name="com.google.android.gms.version"
+295-->[com.google.android.gms:play-services-basement:18.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/6999bfb00e592b4a70cd4ebe580811df/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+296            android:value="@integer/google_play_services_version" />
+296-->[com.google.android.gms:play-services-basement:18.3.0] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/6999bfb00e592b4a70cd4ebe580811df/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+297
+298        <service
+298-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/632b841a3bc4e1c487117ba756b3a35f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+299            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+299-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/632b841a3bc4e1c487117ba756b3a35f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+300            android:exported="false" >
+300-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/632b841a3bc4e1c487117ba756b3a35f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+301            <meta-data
+301-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/632b841a3bc4e1c487117ba756b3a35f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+302                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+302-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/632b841a3bc4e1c487117ba756b3a35f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+303                android:value="cct" />
+303-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/632b841a3bc4e1c487117ba756b3a35f/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+304        </service>
+305        <service
+305-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/d3e0af56918887565c5a3b46b7f91d1f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+306            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+306-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/d3e0af56918887565c5a3b46b7f91d1f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+307            android:exported="false"
+307-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/d3e0af56918887565c5a3b46b7f91d1f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+308            android:permission="android.permission.BIND_JOB_SERVICE" >
+308-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/d3e0af56918887565c5a3b46b7f91d1f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+309        </service>
+310
+311        <receiver
+311-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/d3e0af56918887565c5a3b46b7f91d1f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+312            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+312-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/d3e0af56918887565c5a3b46b7f91d1f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+313            android:exported="false" />
+313-->[com.google.android.datatransport:transport-runtime:3.1.9] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/d3e0af56918887565c5a3b46b7f91d1f/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+314        <receiver
+314-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+315            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+315-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+316            android:directBootAware="false"
+316-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+317            android:enabled="true"
+317-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+318            android:exported="true"
+318-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+319            android:permission="android.permission.DUMP" >
+319-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+320            <intent-filter>
+320-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+321                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+321-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+321-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+322            </intent-filter>
+323            <intent-filter>
+323-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+324                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+324-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+324-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+325            </intent-filter>
+326            <intent-filter>
+326-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+327                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+327-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+327-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+328            </intent-filter>
+329            <intent-filter>
+329-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+330                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+330-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+330-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/cyber/.gradle/caches/9.0-milestone-1/transforms/b025404115bd04f580ed59e4045dfa6b/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+331            </intent-filter>
+332        </receiver>
+333    </application>
+334
+335</manifest>

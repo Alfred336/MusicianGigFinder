@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="12dp">
+
+        <ProgressBar android:id="@+id/progressBar"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center" android:visibility="gone"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="📊 Admin Dashboard" android:textSize="20sp"
+            android:textStyle="bold" android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Musicians stats card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" app:cardElevation="4dp"
+            app:cardCornerRadius="12dp" app:cardBackgroundColor="@color/colorPrimary">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎸 Musicians" android:textSize="15sp" android:textStyle="bold"
+                    android:textColor="@android:color/white" android:layout_marginBottom="6dp"/>
+                <TextView android:id="@+id/tvTotalMusicians"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="14sp" android:textColor="#E3F2FD"/>
+                <TextView android:id="@+id/tvActiveMusicians"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="14sp" android:textColor="#A5D6A7"/>
+                <TextView android:id="@+id/tvPendingMusicians"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="14sp" android:textColor="#FFCC80"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Requests + Payments row -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="6dp"
+                app:cardElevation="3dp" app:cardCornerRadius="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📋 Gig Requests" android:textStyle="bold"
+                        android:textColor="@color/colorPrimary" android:layout_marginBottom="4dp"/>
+                    <TextView android:id="@+id/tvTotalRequests" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="13sp"
+                        android:textColor="@color/colorTextPrimary"/>
+                    <TextView android:id="@+id/tvPendingRequests" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="13sp"
+                        android:textColor="@color/colorPending"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="6dp"
+                app:cardElevation="3dp" app:cardCornerRadius="12dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="💳 Payments" android:textStyle="bold"
+                        android:textColor="@color/colorPrimary" android:layout_marginBottom="4dp"/>
+                    <TextView android:id="@+id/tvTotalPayments" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="13sp"
+                        android:textColor="@color/colorTextPrimary"/>
+                    <TextView android:id="@+id/tvPendingPayments" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="13sp"
+                        android:textColor="@color/colorPending"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!-- Revenue card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" app:cardElevation="4dp"
+            app:cardCornerRadius="12dp" app:cardBackgroundColor="#1B5E20">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="💰 Revenue" android:textSize="14sp" android:textStyle="bold"
+                    android:textColor="@android:color/white" android:layout_marginBottom="4dp"/>
+                <TextView android:id="@+id/tvTotalRevenue" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="18sp"
+                    android:textStyle="bold" android:textColor="#A5D6A7"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Pending Musician Approvals -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="👥 Pending Musician Approvals" android:textSize="17sp"
+            android:textStyle="bold" android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPendingMusicians"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" android:layout_marginBottom="20dp"/>
+
+        <!-- Pending Gig Requests -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="📋 Pending Gig Requests" android:textSize="17sp"
+            android:textStyle="bold" android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPendingRequests"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" android:layout_marginBottom="20dp"/>
+
+        <!-- Pending Payments -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="💳 Pending Payment Confirmations" android:textSize="17sp"
+            android:textStyle="bold" android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPendingPayments"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+</ScrollView>

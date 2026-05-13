@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Profile photo -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tap to add profile photo" android:textColor="@color/colorTextSecondary"
+            android:layout_gravity="center" android:layout_marginBottom="8dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="90dp" android:layout_height="90dp"
+            android:layout_gravity="center" android:src="@drawable/ic_person"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Name row -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="6dp"
+                style="@style/InputField" android:hint="First Name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFirstName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="6dp"
+                style="@style/InputField" android:hint="Last Name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLastName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" style="@style/InputField" android:hint="Email Address">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" style="@style/InputField"
+            android:hint="Phone Number (e.g. +255712345678)">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhone" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" style="@style/InputField" android:hint="Password"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Confirm password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp" style="@style/InputField" android:hint="Confirm Password"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etConfirmPassword" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Skill Level -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Skill Level" android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary" android:layout_marginBottom="4dp"/>
+        <Spinner android:id="@+id/spSkillLevel"
+            android:layout_width="match_parent" android:layout_height="50dp"
+            android:layout_marginBottom="12dp" android:background="@drawable/spinner_bg"/>
+
+        <!-- Advanced Criteria — shown only when Advanced selected -->
+        <LinearLayout
+            android:id="@+id/layoutAdvancedCriteria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFF9C4"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🎹 Advanced Musician Requirements"
+                android:textStyle="bold" android:textColor="#F57F17"
+                android:textSize="14sp" android:layout_marginBottom="8dp"/>
+
+            <CheckBox
+                android:id="@+id/cbAll12Keys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I can play in ALL 12 musical keys (C, C#, D, D#, E, F, F#, G, G#, A, A#, B)"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextPrimary"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="⚠️ This is a mandatory requirement for Advanced level. Booking fee: TZS 30,000"
+                android:textSize="12sp" android:textColor="#BF360C"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Instrument + Gender -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <Spinner android:id="@+id/spInstrument"
+                android:layout_width="0dp" android:layout_height="50dp"
+                android:layout_weight="1" android:layout_marginEnd="6dp"
+                android:background="@drawable/spinner_bg"/>
+            <Spinner android:id="@+id/spGender"
+                android:layout_width="0dp" android:layout_height="50dp"
+                android:layout_weight="1" android:layout_marginStart="6dp"
+                android:background="@drawable/spinner_bg"/>
+        </LinearLayout>
+
+        <!-- Work Type -->
+        <Spinner android:id="@+id/spWorkType"
+            android:layout_width="match_parent" android:layout_height="50dp"
+            android:layout_marginBottom="14dp" android:background="@drawable/spinner_bg"/>
+
+        <!-- Location type -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Location Type" android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary" android:layout_marginBottom="4dp"/>
+        <RadioGroup android:id="@+id/rgLocation"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="10dp">
+            <RadioButton android:id="@+id/rbTanzania"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🇹🇿  Tanzania" android:checked="true"
+                android:layout_marginEnd="24dp"/>
+            <RadioButton android:id="@+id/rbInternational"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🌍  International"/>
+        </RadioGroup>
+
+        <!-- Region -->
+        <Spinner android:id="@+id/spRegion"
+            android:layout_width="match_parent" android:layout_height="50dp"
+            android:layout_marginBottom="12dp" android:background="@drawable/spinner_bg"/>
+
+        <!-- Country (hidden by default) -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" style="@style/InputField"
+            android:hint="Country" android:visibility="gone">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCountry" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Bio -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" style="@style/InputField"
+            android:hint="Short bio / experience (optional)">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBio" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:inputType="textMultiLine"
+                android:minLines="3" android:gravity="top"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Register -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Create Musician Account"
+            android:textSize="16sp" android:textStyle="bold"
+            style="@style/PrimaryButton"/>
+
+        <ProgressBar android:id="@+id/progressBar"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center" android:layout_marginTop="12dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

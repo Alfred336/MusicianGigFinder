@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/item_musician_card.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/item_musician_card.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/item_gig_request.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/item_gig_request.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/item_admin_payment.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/item_admin_payment.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/item_admin_musician.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/item_admin_musician.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_requester_home.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_requester_home.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/item_review.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/item_review.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_musician_dashboard.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_musician_dashboard.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_main.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_musician_login.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_musician_login.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_musician_profile.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_musician_profile.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/dialog_request_gig.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/dialog_request_gig.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_musician_register.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_musician_register.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_musician_profile_edit.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_musician_profile_edit.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_admin_login.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_admin_login.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_admin_dashboard.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_admin_dashboard.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/activity_payment.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/activity_payment.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/dialog_payment_reference.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/dialog_payment_reference.xml"
+    },
+    {
+        "merged": "com.musicianfinder.app-mergeReleaseResources-46:/layout/item_admin_request.xml",
+        "source": "com.musicianfinder.app-main-49:/layout/item_admin_request.xml"
+    }
+]

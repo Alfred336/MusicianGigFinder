@@ -1,0 +1,37 @@
+{
+  "_IMPORTANT_": "REPLACE THIS FILE with your real google-services.json from Firebase Console.",
+  "_STEPS_": [
+    "1. Go to https://console.firebase.google.com",
+    "2. Create project named 'MusicianGigFinder'",
+    "3. Add Android app with package: com.musicianfinder",
+    "4. Download google-services.json",
+    "5. Replace this file with the downloaded one",
+    "6. Enable: Authentication (Email/Password), Firestore, Storage, Cloud Messaging"
+  ],
+  "project_info": {
+    "project_number": "YOUR_PROJECT_NUMBER",
+    "project_id": "YOUR_PROJECT_ID",
+    "storage_bucket": "YOUR_PROJECT_ID.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "YOUR_MOBILESDK_APP_ID",
+        "android_client_info": {
+          "package_name": "com.musicianfinder"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

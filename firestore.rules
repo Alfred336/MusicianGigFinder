@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Admins — only admins can read/write
+    match /admins/{adminId} {
+      allow read, write: if request.auth != null
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Musicians — public read for Active; owner or admin can write
+    match /musicians/{musicianId} {
+      allow read: if resource.data.status == 'Active';
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null
+        && (request.auth.uid == musicianId
+            || exists(/databases/$(database)/documents/admins/$(request.auth.uid)));
+    }
+
+    // Gig requests — anyone can create; admin can approve/reject
+    match /gig_requests/{requestId} {
+      allow create: if true;
+      allow read: if request.auth != null;
+      allow update: if request.auth != null
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Payments — anyone can create; admin can confirm
+    match /payments/{paymentId} {
+      allow create: if true;
+      allow read, update: if request.auth != null
+        && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Reviews — anyone can read; authenticated users can create
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+    }
+  }
+}

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Summary Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💳 Payment Details"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvPaymentSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#BBDEFB"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tab Layout -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabTextColor="@color/colorTextSecondary"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabBackground="@color/colorSurface"
+            style="@style/Widget.MaterialComponents.TabLayout"/>
+
+        <!-- ═══ MOBILE MONEY PANEL ═══════════════════════════════════════ -->
+        <LinearLayout
+            android:id="@+id/panelMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Mobile Provider"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="12dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/rgProvider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- M-Pesa -->
+                        <RadioButton
+                            android:id="@+id/rbMpesa"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:text="🟢  M-Pesa (Vodacom)"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:checked="true"
+                            android:paddingStart="12dp"/>
+
+                        <!-- Airtel Money -->
+                        <RadioButton
+                            android:id="@+id/rbAirtel"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:text="🔴  Airtel Money"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:paddingStart="12dp"/>
+
+                        <!-- Mixx by Yas (Tigo Pesa) -->
+                        <RadioButton
+                            android:id="@+id/rbMixx"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:text="🔵  Mixx by Yas (formerly Tigo Pesa)"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:paddingStart="12dp"/>
+
+                        <!-- HaloPesa -->
+                        <RadioButton
+                            android:id="@+id/rbHaloPesa"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:text="🟠  HaloPesa (Halotel)"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:paddingStart="12dp"/>
+
+                        <!-- EzyPesa -->
+                        <RadioButton
+                            android:id="@+id/rbEzyPesa"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:text="🟣  EzyPesa (TTCL)"
+                            android:textSize="15sp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:paddingStart="12dp"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Phone number input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                style="@style/InputField"
+                android:hint="Phone number (e.g. 0712345678)">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="13"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ℹ️  You will receive a USSD popup on your phone. Enter your PIN to confirm."
+                android:textSize="13sp"
+                android:textColor="@color/colorTextSecondary"
+                android:background="#EFF3FB"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPayMobile"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="📱  PAY NOW"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                style="@style/AccentButton"/>
+
+        </LinearLayout>
+
+        <!-- ═══ CARD PAYMENT PANEL ════════════════════════════════════════ -->
+        <LinearLayout
+            android:id="@+id/panelCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Accepted cards banner -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Accepted: 💳 Visa   💳 Mastercard   💳 UnionPay"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@color/colorLight"
+                        android:padding="8dp"
+                        android:layout_marginBottom="14dp"/>
+
+                    <!-- Card number + brand -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            style="@style/InputField"
+                            android:hint="Card Number">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etCardNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="19"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/tvCardBrand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Card"
+                            android:textSize="13sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:minWidth="60dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <!-- Expiry + CVV -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            style="@style/InputField"
+                            android:hint="MM/YY">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etExpiry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLength="5"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            style="@style/InputField"
+                            android:hint="CVV"
+                            app:passwordToggleEnabled="true">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etCvv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberPassword"
+                                android:maxLength="4"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <!-- Card holder name -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        style="@style/InputField"
+                        android:hint="Card Holder Name">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etCardHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🔒  Card details are encrypted and sent securely over HTTPS via ClickPesa. Never stored on device."
+                        android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary"
+                        android:background="#EFF3FB"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPayCard"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="💳  PAY WITH CARD"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                style="@style/AccentButton"/>
+        </LinearLayout>
+
+        <!-- ═══ STATUS PANEL ══════════════════════════════════════════════ -->
+        <LinearLayout
+            android:id="@+id/layoutStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:gravity="center">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tvStatusTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginBottom="12dp"/>
+
+                    <TextView
+                        android:id="@+id/tvStatusMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorTextPrimary"
+                        android:gravity="center"
+                        android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDone"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="✔  Done"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                style="@style/PrimaryButton"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A237E</color>
+    <color name="colorPrimaryDark">#0D1754</color>
+    <color name="colorPrimaryLight">#534BAE</color>
+    <color name="colorAccent">#FF6F00</color>
+    <color name="colorLight">#E8EAF6</color>
+    <color name="colorAvailable">#4CAF50</color>
+    <color name="colorBusy">#F44336</color>
+    <color name="colorPending">#FF9800</color>
+    <color name="colorApproved">#4CAF50</color>
+    <color name="colorRejected">#F44336</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorCardBackground">#FFFFFF</color>
+    <color name="colorDivider">#E0E0E0</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorStarRating">#FFC107</color>
+    <color name="colorDarkBackground">#121212</color>
+    <color name="colorDarkSurface">#1E1E1E</color>
+    <color name="colorDarkCard">#2C2C2C</color>
+</resources>
